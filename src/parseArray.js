@@ -13,9 +13,10 @@ export default function parseArray(token, data) {
     // #, arr, Array()
     let result = ''
     let keyName = token[1]
-    let arrayData = lookup(data, keyName)
-    for (let i = 0; i < arrayData.length; i++) {
-        let dataItem = arrayData[i]
+    let arrayScopeData = lookup(data, keyName)
+
+    for (let i = 0; i < arrayScopeData.length; i++) {
+        let dataItem = arrayScopeData[i]
         let wrappedScopeData = {
             ...dataItem,
             '.': dataItem

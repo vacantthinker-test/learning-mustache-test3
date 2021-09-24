@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "development": "webpack-dev-server"
+    "development": "webpack-dev-server",
+    "git-commit-push": "git add . && git commit -m 'update' && git push"
   },
   "keywords": [],
   "author": "",
